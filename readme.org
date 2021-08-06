@@ -1,0 +1,7 @@
+#+TITLE: Welcome to the Dark Side
+
+Collection of programming's black magics.
+
+#+begin_quote
+May the force be with you.
+#+end_quote
