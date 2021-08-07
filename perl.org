@@ -2,3 +2,42 @@
 
 Reference:
 - [[https://learnbyexample.github.io/learn_perl_oneliners/][Perl one-liners cookbook]]
+- [[https://perlmaven.com/the-default-variable-of-perl][Perl Maven]]
+
+
+Perl will flatten and unite the contents of two arrays.
+#+begin_src perl
+@a = (1,2,"3");
+@b = ("e", "F");
+@c = (@a, @b);
+scalar @c
+#+end_src
+
+#+RESULTS:
+: 5
+
+=map= and =grep= are right association.
+#+begin_src perl
+@a = map { $_ + 1 } grep { $_ >= 5 } (1..10);
+"@a"
+#+end_src
+
+#+RESULTS:
+: 6 7 8 9 10 11
+
+#+begin_src perl :results output
+$_ = qq(ABCDEFG);
+tr/ABCD/1234/;
+print;
+#+end_src
+
+#+RESULTS:
+: 1234EFG
+
+Use =-s= for getting size by filename.
+#+begin_src perl
+-s "./readme.org"
+#+end_src
+
+#+RESULTS:
+: 131
