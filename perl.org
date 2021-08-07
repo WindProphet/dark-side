@@ -1,0 +1,4 @@
+#+TITLE: Perl
+
+Reference:
+- [[https://learnbyexample.github.io/learn_perl_oneliners/][Perl one-liners cookbook]]
